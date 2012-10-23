@@ -269,7 +269,7 @@ restart_app() {
 	echo -n -e "${COLOR_WHITE}-${COLOR_OFF} Removing *.pyc files... "
 	find -name "*.pyc" -delete && echo "done!"
 	echo -e "${COLOR_WHITE}-${COLOR_OFF} Restarting django APP $APP_NAME..."
-	supervisorctl restart herobrine
+	supervisorctl restart $APP_NAME
 }
 
 #
